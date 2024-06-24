@@ -2,14 +2,47 @@
   text-align: center;
 }
 
-.App-logo {
+.image-container {
+  position: relative;
+  width: 40vmin;
   height: 40vmin;
-  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.orbit-container {
+  position: absolute;
+  width: 20vmin;
+  height: 20vmin;
+  animation: orbit infinite 10s linear;
+}
+
+.App-logo, .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.App-logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.overlay {
+  color: white;
+  font-size: calc(10px + 2vmin);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(20vmin) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(20vmin) rotate(-360deg);
   }
 }
 
@@ -28,11 +61,73 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Media Queries */
+@media (max-width: 1200px) {
+  .image-container {
+    width: 30vmin;
+    height: 30vmin;
   }
-  to {
-    transform: rotate(360deg);
+  .orbit-container {
+    width: 15vmin;
+    height: 15vmin;
+  }
+  .overlay {
+    font-size: calc(8px + 2vmin);
+  }
+}
+
+@media (max-width: 992px) {
+  .image-container {
+    width: 25vmin;
+    height: 25vmin;
+  }
+  .orbit-container {
+    width: 12vmin;
+    height: 12vmin;
+  }
+  .overlay {
+    font-size: calc(6px + 2vmin);
+  }
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    width: 20vmin;
+    height: 20vmin;
+  }
+  .orbit-container {
+    width: 10vmin;
+    height: 10vmin;
+  }
+  .overlay {
+    font-size: calc(5px + 2vmin);
+  }
+}
+
+@media (max-width: 576px) {
+  .image-container {
+    width: 15vmin;
+    height: 15vmin;
+  }
+  .orbit-container {
+    width: 8vmin;
+    height: 8vmin;
+  }
+  .overlay {
+    font-size: calc(4px + 2vmin);
+  }
+}
+
+@media (max-width: 400px) {
+  .image-container {
+    width: 10vmin;
+    height: 10vmin;
+  }
+  .orbit-container {
+    width: 6vmin;
+    height: 6vmin;
+  }
+  .overlay {
+    font-size: calc(3px + 2vmin);
   }
 }
