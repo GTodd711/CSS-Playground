@@ -10,14 +10,14 @@ function App() {
             <div className="overlay">
             <h1>Gavin Todd</h1>
         <div className="orbit">
-          <div className="planet" id="mercury"></div>
-          <div className="planet" id="venus"></div>
-          <div className="planet" id="earth"></div>
-          <div className="planet" id="mars"></div>
-          <div className="planet" id="jupiter"></div>
-          <div className="planet" id="saturn"></div>
-          <div className="planet" id="uranus"></div>
-          <div className="planet" id="neptune"></div>
+          <div className="planet0" id="mercury"></div>
+          <div className="planet1" id="venus"></div>
+          <div className="planet2" id="earth"></div>
+          <div className="planet3" id="mars"></div>
+          <div className="planet4" id="jupiter"></div>
+          <div className="planet5" id="saturn"></div>
+          <div className="planet6" id="uranus"></div>
+          <div className="planet7" id="neptune"></div>
         </div>
         <article
           className="App-link"
@@ -32,11 +32,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
       </header>
-
-
-      </div>
-
-
+    </div>
   );
 }
 

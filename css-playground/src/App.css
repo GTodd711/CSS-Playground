@@ -31,6 +31,96 @@
   border-radius: 50%;
 }
 
+
+.orbit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: orbit infinite 10s linear;
+}
+
+.planet0 {
+  position: absolute;
+  width: 20px; /* Adjust the size of the planets */
+  height: 20px;
+  border-radius: 50%;
+  background: gray; /* Planet color */
+}
+.planet1 {
+  position: absolute;
+  width: 20px; /* Adjust the size of the planets */
+  height: 20px;
+  border-radius: 50%;
+  background: gray; /* Planet color */
+}
+
+.planet2 {
+  position: absolute;
+  width: 20px; /* Adjust the size of the planets */
+  height: 20px;
+  border-radius: 50%;
+  background: gray; /* Planet color */
+}
+
+.planet3 {
+  position: absolute;
+  width: 20px; /* Adjust the size of the planets */
+  height: 20px;
+  border-radius: 50%;
+  background: gray; /* Planet color */
+}
+
+.planet4 {
+  position: absolute;
+  width: 20px; /* Adjust the size of the planets */
+  height: 20px;
+  border-radius: 50%;
+  background: gray; /* Planet color */
+}
+
+.planet5 {
+  position: absolute;
+  width: 20px; /* Adjust the size of the planets */
+  height: 20px;
+  border-radius: 50%;
+  background: gray; /* Planet color */
+}
+
+.planet6 {
+  position: absolute;
+  width: 20px; /* Adjust the size of the planets */
+  height: 20px;
+  border-radius: 50%;
+  background: gray; /* Planet color */
+}
+
+.planet7 {
+  position: absolute;
+  width: 20px; /* Adjust the size of the planets */
+  height: 20px;
+  border-radius: 50%;
+  background: gray; /* Planet color */
+}
+
+.mercury { animation-duration: 2s; }
+.venus { animation-duration: 3s; }
+.earth { animation-duration: 4s; }
+.mars { animation-duration: 5s; }
+.jupiter { animation-duration: 6s; }
+.saturn { animation-duration: 7s; }
+.uranus { animation-duration: 8s; }
+.neptune { animation-duration: 9s; }
+
+.mercury { top: 30%; left: 30%; }
+.venus { top: 40%; left: 40%; }
+.earth { top: 50%; left: 50%; }
+.mars { top: 60%; left: 60%; }
+.jupiter { top: 70%; left: 70%; }
+.saturn { top: 80%; left: 80%; }
+.uranus { top: 90%; left: 90%; }
+.neptune { top: 100%; left: 100%; }
+
+
 .overlay {
   color: white;
   font-size: calc(10px + 2vmin);
