@@ -12,9 +12,9 @@
 }
 
 .orbit-container {
-  position: absolute;
-  width: 20vmin;
-  height: 20vmin;
+  position: relative;
+  width: 100%;
+  height: 200vmin;
   animation: orbit infinite 10s linear;
 }
 
@@ -36,7 +36,9 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  animation: orbit infinite 10s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .planet0 {
@@ -44,14 +46,14 @@
   width: 20px; /* Adjust the size of the planets */
   height: 20px;
   border-radius: 50%;
-  background: gray; /* Planet color */
+  background: linear-gradient( to right, silver, gray); /* Planet color */
 }
 .planet1 {
   position: absolute;
   width: 20px; /* Adjust the size of the planets */
   height: 20px;
   border-radius: 50%;
-  background: gray; /* Planet color */
+  background: linear-gradient(to right, yellow, orange); /* Planet color */
 }
 
 .planet2 {
@@ -59,7 +61,7 @@
   width: 20px; /* Adjust the size of the planets */
   height: 20px;
   border-radius: 50%;
-  background: gray; /* Planet color */
+  background: linear-gradient(to right, blue, green ); /* Planet color */
 }
 
 .planet3 {
@@ -67,7 +69,7 @@
   width: 20px; /* Adjust the size of the planets */
   height: 20px;
   border-radius: 50%;
-  background: gray; /* Planet color */
+  background: linear-gradient(to right, #D21404, #4E0707, #B7410E); /* Planet color */
 }
 
 .planet4 {
@@ -75,7 +77,7 @@
   width: 20px; /* Adjust the size of the planets */
   height: 20px;
   border-radius: 50%;
-  background: gray; /* Planet color */
+  background: linear-gradient(to right, #B7410E, orange, red, orange );/* Planet color */
 }
 
 .planet5 {
@@ -83,7 +85,7 @@
   width: 20px; /* Adjust the size of the planets */
   height: 20px;
   border-radius: 50%;
-  background: gray; /* Planet color */
+  background: linear-gradient(to right, #452711 yellow, #452711  ); /* Planet color */
 }
 
 .planet6 {
@@ -91,7 +93,7 @@
   width: 20px; /* Adjust the size of the planets */
   height: 20px;
   border-radius: 50%;
-  background: gray; /* Planet color */
+  background: linear-gradient(to right, lightblue, cyan ); /* Planet color */
 }
 
 .planet7 {
@@ -99,27 +101,8 @@
   width: 20px; /* Adjust the size of the planets */
   height: 20px;
   border-radius: 50%;
-  background: gray; /* Planet color */
+  background: linear-gradient(to right, darkblue, #0147AB, navy  ); /* Planet color */
 }
-
-.mercury { animation-duration: 2s; }
-.venus { animation-duration: 3s; }
-.earth { animation-duration: 4s; }
-.mars { animation-duration: 5s; }
-.jupiter { animation-duration: 6s; }
-.saturn { animation-duration: 7s; }
-.uranus { animation-duration: 8s; }
-.neptune { animation-duration: 9s; }
-
-.mercury { top: 30%; left: 30%; }
-.venus { top: 40%; left: 40%; }
-.earth { top: 50%; left: 50%; }
-.mars { top: 60%; left: 60%; }
-.jupiter { top: 70%; left: 70%; }
-.saturn { top: 80%; left: 80%; }
-.uranus { top: 90%; left: 90%; }
-.neptune { top: 100%; left: 100%; }
-
 
 .overlay {
   color: white;
@@ -129,12 +112,73 @@
 
 @keyframes orbit {
   from {
-    transform: rotate(0deg) translateX(20vmin) rotate(0deg);
+    transform: rotate(0deg) translateX(45vmin) rotate(0deg);
   }
   to {
-    transform: rotate(360deg) translateX(20vmin) rotate(-360deg);
+    transform: rotate(360deg) translateX(45vmin) rotate(-360deg);
   }
 }
+
+@keyframes orbitMercury {
+  from { transform: rotate(0deg) translateX(10vmin) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(10vmin) rotate(-360deg); }
+}
+@keyframes orbitVenus {
+  from { transform: rotate(0deg) translateX(15vmin) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(15vmin) rotate(-360deg); }
+}
+@keyframes orbitEarth {
+  from { transform: rotate(0deg) translateX(20vmin) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(20vmin) rotate(-360deg); }
+}
+@keyframes orbitMars {
+  from { transform: rotate(0deg) translateX(25vmin) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(25vmin) rotate(-360deg); }
+}
+@keyframes orbitJupiter {
+  from { transform: rotate(0deg) translateX(30vmin) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(30vmin) rotate(-360deg); }
+}
+@keyframes orbitSaturn {
+  from { transform: rotate(0deg) translateX(35vmin) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(35vmin) rotate(-360deg); }
+}
+@keyframes orbitUranus {
+  from { transform: rotate(0deg) translateX(40vmin) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(40vmin) rotate(-360deg); }
+}
+@keyframes orbitNeptune {
+  from { transform: rotate(0deg) translateX(45vmin) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(45vmin) rotate(-360deg); }
+}
+/* Add keyframes for other planets similarly */
+
+.planet0 {
+  animation: orbitMercury infinite 2s linear;
+}
+.planet1 {
+  animation: orbitVenus infinite 3s linear;
+}
+.planet2 {
+  animation: orbitEarth infinite 4s linear;
+}
+.planet3 {
+  animation: orbitMars infinite 5s linear;
+}
+.planet4 {
+  animation: orbitJupiter infinite 6s linear;
+}
+.planet5 {
+  animation: orbitSaturn infinite 7s linear;
+}
+.planet6 {
+  animation: orbitUranus infinite 8s linear;
+}
+.planet7 {
+  animation: orbitNeptune infinite 9s linear;
+}
+
+/* Add animation properties for other planets similarly */
 
 .App-header {
   background-color: #282c34;
