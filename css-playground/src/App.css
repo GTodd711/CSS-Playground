@@ -4,8 +4,8 @@
 
 .image-container {
   position: relative;
-  width: 40vmin;
-  height: 40vmin;
+  width: 100vmin;
+  height: 100vmin;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@
 .orbit-container {
   position: relative;
   width: 100%;
-  height: 200vmin;
+  height: 100%;
   animation: orbit infinite 10s linear;
 }
 
@@ -43,66 +43,67 @@
 
 .planet0 {
   position: absolute;
-  width: 20px; /* Adjust the size of the planets */
-  height: 20px;
+  width: 10px; /* Mercury */
+  height: 10px;
   border-radius: 50%;
   background: linear-gradient( to right, silver, gray); /* Planet color */
 }
 .planet1 {
   position: absolute;
-  width: 20px; /* Adjust the size of the planets */
-  height: 20px;
+  width: 19px; /* Venus */
+  height: 19px;
   border-radius: 50%;
-  background: linear-gradient(to right, yellow, orange); /* Planet color */
+  background: linear-gradient(to top right, #B7410E, yellow, orange, #B7410E); /* Planet color */
 }
 
 .planet2 {
   position: absolute;
-  width: 20px; /* Adjust the size of the planets */
-  height: 20px;
+  width: 25px; /* Earth */
+  height: 25px;
   border-radius: 50%;
-  background: linear-gradient(to right, blue, green ); /* Planet color */
+  background: linear-gradient(to top left, blue, green ); /* Planet color */
 }
 
 .planet3 {
   position: absolute;
-  width: 20px; /* Adjust the size of the planets */
-  height: 20px;
+  width: 16px; /* Mars */
+  height: 16px;
   border-radius: 50%;
-  background: linear-gradient(to right, #D21404, #4E0707, #B7410E); /* Planet color */
+  background: linear-gradient(to top,  #D21404, #4E0707, #B7410E); /* Planet color */
 }
 
 .planet4 {
   position: absolute;
-  width: 20px; /* Adjust the size of the planets */
-  height: 20px;
+  width: 50px; /* Jupiter */
+  height: 50px;
   border-radius: 50%;
-  background: linear-gradient(to right, #B7410E, orange, red, orange );/* Planet color */
+  background: linear-gradient(to bottom, #B7410E, orange, red, orange );/* Planet color */
 }
 
 .planet5 {
   position: absolute;
-  width: 20px; /* Adjust the size of the planets */
-  height: 20px;
+  width: 45px; /* Saturn */
+  height: 45px;
   border-radius: 50%;
-  background: linear-gradient(to right, #452711 yellow, #452711  ); /* Planet color */
+  background: linear-gradient(to right, #452711, yellow, #452711  ); /* Planet color */
 }
 
 .planet6 {
   position: absolute;
-  width: 20px; /* Adjust the size of the planets */
-  height: 20px;
+  width: 30px; /* Uranus */
+  height: 30px;
   border-radius: 50%;
-  background: linear-gradient(to right, lightblue, cyan ); /* Planet color */
+  background: linear-gradient(to top right, cyan, lightblue, cyan ); /* Planet color */
 }
 
 .planet7 {
   position: absolute;
-  width: 20px; /* Adjust the size of the planets */
-  height: 20px;
+  width: 29px; /* Neptune */
+  height: 29px;
   border-radius: 50%;
-  background: linear-gradient(to right, darkblue, #0147AB, navy  ); /* Planet color */
+  background: linear-gradient(to top, darkblue, #0147AB, navy  ); /* Planet color */
 }
+
 
 .overlay {
   color: white;
